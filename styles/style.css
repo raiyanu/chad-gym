@@ -4,11 +4,13 @@
   box-sizing: border-box;
 }
 html,body{
-  background-color: black;
+  background-color: whitesmoke;
   color: white;
+  position: relative;
 }
 .icon{
   height: 12px;
   aspect-ratio: 1/1;
-  background-color: aqua;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
 }

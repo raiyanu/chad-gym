@@ -1,83 +1,51 @@
-.info-bar{
+/* navbar */
+.menu-container li{
+  list-style-type: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-bottom: 1px solid rgba(128, 128, 128, 0);
+  transition: border 250ms ease-in-out;
+  cursor: pointer;
+
+}
+.menu-container li:hover{
+  border-bottom: 1px solid grey;
+}
+.navbar{
+  position: sticky;
+  padding: 5px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: calc(100% - 24px);
-  margin: auto;
-  flex-wrap: wrap;
-  border: 1px solid grey;
-  gap: 12px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 12px;
+  flex-direction: column;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.164);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.164), rgba(0,0,0,0));
+  position: absolute;
+  top: 1px;
+  z-index: 999;
+  width: 100%;
 }
-
-.col1, .col2{
+.navbar h1{
+  font-size: xx-large;
+  font-weight: 500;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.menu-container {
   display: flex;
   align-items: center;
-  gap: 5px;
-} 
-.col2{
-  display: flex;
-  border: 1px solid red;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
 }
-.col2 span{
-  display: flex;
-  gap: 5px;
-  margin-left: 5px;
-}
-.menu-container:nth-child(1){
-  grid-area: mymenu1;
-}
-.menu-container:nth-child(2){
-  grid-area: mymenu2;
-}
-.menu-container li{
-  list-style-type: none;
-}
-.webname{
-  grid-area: webname;
-  width: 100%;
-  background-color: red;
-}
-.navbar{
-  display: grid;
-  text-align: center;
-  grid-template-areas: 
-  /* 'mymenu1 mymenu2 webname' */
-  'webname webname'
-  'mymenu1 mymenu2';
-  background-color: green;
-}
-@media (min-width:500px) {
+
+@media (min-width:600px) {
   .navbar{
-    background-color: red;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
+    padding: 1rem 1rem 1px 1rem;
+    flex-direction: row;
   }
-  .webname{
-    width: auto;
-  }
-  .navbar{
-    padding: .5rem;
+  .menu-container{
+    gap: 20px;
   }
 }
 @media (min-width:700px) {
-  .navbar{
-    background-color: red;
-    display: grid;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-    grid-template-areas: 
-    /* 'mymenu1 mymenu2 webname' */
-    'mymenu1 webname.. mymenu2';
-    padding: .5rem 1rem;
-  }
-  .menu-container{
-    display: flex;
-    gap: 5px;
-  }
+
 }
