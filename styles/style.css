@@ -8,6 +8,11 @@ html,body{
   color: white;
   position: relative;
 }
+body{
+  display: block;
+  margin: auto;
+  max-width: 1400px;
+}
 .icon{
   height: 12px;
   aspect-ratio: 1/1;

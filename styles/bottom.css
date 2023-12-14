@@ -1,0 +1,85 @@
+.subscribe {
+  padding: 3rem 0.5rem;
+  width: 100%;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: monospace;
+  gap: 0.2rem;
+  background-color: rgb(230, 230, 230);
+}
+.subscribe h1 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+@media (width<=600px) {
+  .subscribe h1 {
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+}
+.subscribe input {
+  padding: 1rem 1rem;
+  width: 400px;
+  max-width: 100%;
+  outline: none;
+  border: none;
+  border: 1px solid grey;
+  font-size: 18px;
+  font-weight: 100;
+  color: rgb(51, 49, 49);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+}
+.subscribe input:is(:hover, :active) {
+  border: 1px solid black;
+}
+.subscribe button {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  border: 1px solid rgb(201, 196, 196);
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: 50;
+}
+.subscribe button:hover {
+  border: 1px solid grey;
+}
+footer{
+  width: 100%;
+  padding: 4rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.social img{
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.extra-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.extra-link a{
+  color: black;
+  text-decoration:underline;
+}
+@media (width<=650px) {
+  footer{
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+}

@@ -2,13 +2,13 @@
 .menu-container li{
   list-style-type: none;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  border-bottom: 1px solid rgba(128, 128, 128, 0);
+  border-bottom: 2px solid rgba(128, 128, 128, 0);
   transition: border 250ms ease-in-out;
   cursor: pointer;
 
 }
 .menu-container li:hover{
-  border-bottom: 1px solid grey;
+  border-bottom: 2px solid grey;
 }
 .navbar{
   position: sticky;
