@@ -25,6 +25,10 @@
   z-index: 999;
   width: 100%;
 }
+.navbar ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
 .navbar h1{
   font-size: xx-large;
   font-weight: 500;
@@ -36,7 +40,10 @@
   justify-content: space-evenly;
   gap: 10px;
 }
-
+.active{
+  font-weight: 600;
+  border-bottom: 2px solid rgb(224, 223, 223) !important;
+}
 @media (min-width:600px) {
   .navbar{
     padding: 1rem 1rem 1px 1rem;
