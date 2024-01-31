@@ -1,173 +1,265 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChadGym | Home</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/top.css" />
+    <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="stylesheet" href="styles/card.css" />
+    <link rel="stylesheet" href="styles/spec.css" />
+    <link rel="stylesheet" href="styles/bottom.css" />
+    <link rel="stylesheet" href="./styles/chatbot.css" />
+    <script src="./js/chatbot.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ChadGym | Home</title>
-  <link rel="stylesheet" href="styles/style.css" />
-  <link rel="stylesheet" href="styles/top.css" />
-  <link rel="stylesheet" href="styles/hero.css" />
-  <link rel="stylesheet" href="styles/card.css" />
-  <link rel="stylesheet" href="styles/spec.css" />
-  <link rel="stylesheet" href="styles/bottom.css" />
-</head>
-
-<body>
-  <section class="hero">
-    <nav class="navbar">
-      <h1 class="webname">ChadGYM</h1>
-      <ul class="menu-container">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="coach.html">Coach</a></li>
-        <li><a href="product.html">Product</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hero-detail">
-      <span class="date">Since 2000</span>
-      <h1>Forge your muscles at our strength sanctuary.</h1>
-      <span class="intro">Forge your muscle like iron with our expertise certified coaches at
-        12/7 to support you.</span>
-      <button>
-        Explore More
-        <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="m8 0c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm6.8 9.5c0 .5-.7.66-2 1 .124-.589.206-1.277.229-1.98l2.001-.02c0 .36-.08.5-.16 1zm-13.6 0c-.1-.5-.15-.64-.2-1h2c.024.723.106 1.411.244 2.079-1.344-.419-2.044-.579-2.044-1.079zm0-3c0-.5.7-.66 2-1-.115.594-.187 1.284-.2 1.989l-2 .011c0-.36.08-.5.16-1zm7.3-1.5c1.13.013 2.226.107 3.298.277.047.643.165 1.41.201 2.199l-3.499.025v-2.5zm0-1v-2.94c1.17.27 2.2 1.47 2.84 3.15-.836-.116-1.819-.192-2.817-.21zm-1-2.94v2.94c-1.017.015-2.001.087-2.968.214.768-1.684 1.798-2.884 2.968-3.154zm0 3.94v2.5h-3.5c.031-.806.142-1.571.326-2.307.932-.08 2.035-.177 3.158-.193zm-3.5 3.5h3.5v2.5c-1.13-.013-2.226-.107-3.298-.277-.047-.643-.165-1.41-.201-2.199zm3.5 3.5v2.94c-1.17-.27-2.2-1.47-2.84-3.15.836.116 1.819.192 2.817.21zm1 2.94v-2.94c1.017-.015 2.001-.087 2.968-.214-.768 1.684-1.798 2.884-2.968 3.154zm0-3.94v-2.5h3.5c-.031.806-.142 1.571-.326 2.307-.932.08-2.035.177-3.158.193zm6.5-3.5h-2c-.024-.723-.106-1.411-.244-2.079 1.354.399 2.014.559 2.014 1.079.13.5.18.64.23 1zm-.7-2.59c-.506-.204-1.106-.38-1.726-.5-.361-1.019-.809-1.898-1.389-2.672 1.355.726 2.413 1.811 3.067 3.131zm-9.46-3.15c-.568.752-1.019 1.631-1.305 2.581-.699.189-1.299.365-1.874.593.751-1.39 1.823-2.475 3.139-3.156zm-3.11 9.33c.506.204 1.106.38 1.726.5.361 1.019.809 1.898 1.389 2.672-1.367-.722-2.436-1.807-3.097-3.131zm9.44 3.15c.564-.753 1.012-1.631 1.295-2.581.699-.189 1.299-.365 1.874-.593-.751 1.39-1.823 2.475-3.139 3.156z" />
-        </svg>
-      </button>
+  <body>
+    <div class="chatbot" id="chatbot" onclick="switch_chatbot()">
+      <img src="./assets/icons/bot.svg" alt="" />
     </div>
-  </section>
-  <section class="card-gallery">
-    <div class="about-head">
-      <h1>Trainers</h1>
-      <hr />
-      <span>Best certified Gym</span>
-    </div>
-    <div class="card-container">
-      <div class="card">
-        <img src="assets/gymcoach1.jpg" alt="" />
-        <h2>The cardio expects</h2>
-        <!-- Nutrition Coach -->
-        <span>with 12 years of experience</span>
-        <button>Get Appointment</button>
-      </div>
-      <div class="card">
-        <img src="assets/gymcoach2.jpg" alt="" />
-        <h2>Nutrition expertise</h2>
-        <!-- Nutrition Coach -->
-        <span>Diploma in cardiology</span>
-        <button>Get Appointment</button>
-      </div>
-      <div class="card">
-        <img src="assets/gymcoach3.jpg" alt="" />
-        <h2>The cardio expects</h2>
-        <!-- Nutrition Coach -->
-        <span>with 12 years of experience</span>
-        <button>Get Appointment</button>
-      </div>
-      <div class="card">
-        <img src="assets/gymcoach4.jpg" alt="" />
-        <h2>The cardio expects</h2>
-        <!-- Nutrition Coach -->
-        <span>with 12 years of experience</span>
-        <button>Get Appointment</button>
-      </div>
-
-    </div>
-  </section>
-  <section class="spec">
-    <div class="about-head">
-      <h1>OUR SPECIALITIES</h1>
-      <hr style="width:200px;" />
-      <span>What makes out gym better than others?</span>
-    </div>
-    <div class="spec-card-container">
-      <div class="spec-card">
-        <div class="spec-card-detail">
-          <div class="arrow-up">
-            <svg style="height: 1.5rem; width: 2rem;display: block; margin: auto;"
-              enable-background="new 0 0 40 50" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path fill="white"
-                d="m16.9 13.4-4.2-4.2c-.4-.4-1-.4-1.4 0l-4.2 4.2c-.4.4-.4 1 0 1.4s1 .4 1.4 0l3.5-3.5 3.5 3.5c.2.2.4.3.7.3.3 0 .5-.1.7-.3.4-.4.4-1 0-1.4z" />
-            </svg>
-          </div>
-          <h3>Waiting for others to finish using dumbills so you can use it?</h3>
-          <p>not in our gym we got
-            more than 50 individual
-            dumbills so no any of
-            our clients wait for thier
-            turn,there is no room for
-            wait</p>
+    <div class="chatbot-modal visible" id="chatbot-modal">
+      <div class="chat-container">
+        <div class="chat-header">
+          <img src="./assets/icons/bot.svg" alt="BOT" />
+          <h3>ChadGym Bot</h3>
+          <img
+            src="./assets/icons/bot.svg"
+            style="cursor: pointer"
+            alt="X"
+            onclick="switch_chatbot()"
+          />
+        </div>
+        <ul class="chat-message-container">
+          <li class="message-sent">
+            <p>hey there</p>
+          </li>
+          <li class="message-recieved">
+            <p>yes! how i can help you?</p>
+          </li>
+          <li class="message-sent">
+            <p>hey there</p>
+          </li>
+          <li class="message-recieved">
+            <p>yes! how i can help you?</p>
+          </li>
+          <li class="message-sent">
+            <p>hey there</p>
+          </li>
+          <li class="message-recieved">
+            <p>yes! how i can help you?</p>
+          </li>
+          <li class="message-sent">
+            <p>hey there</p>
+          </li>
+          <li class="message-recieved">
+            <p>yes! how i can help you?</p>
+          </li>
+          <li class="message-sent">
+            <p>hey there</p>
+          </li>
+          <li class="message-recieved">
+            <p>yes! how i can help you?</p>
+          </li>
+          <li class="message-sent">
+            <p>hey there</p>
+          </li>
+          <li class="message-recieved">
+            <p>yes! how i can help you?</p>
+          </li>
+        </ul>
+        <div class="send-message">
+          <input type="text" id="message-input" />
+          <button>
+            <img src="./assets/icons/bot.svg" alt="" />
+          </button>
         </div>
       </div>
-      <div class="spec-card">
-        <div class="spec-card-detail">
-          <div class="arrow-up">
-            <svg style="height: 1.5rem; width: 2rem;display: block; margin: auto;"
-              enable-background="new 0 0 40 50" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path fill="white"
-                d="m16.9 13.4-4.2-4.2c-.4-.4-1-.4-1.4 0l-4.2 4.2c-.4.4-.4 1 0 1.4s1 .4 1.4 0l3.5-3.5 3.5 3.5c.2.2.4.3.7.3.3 0 .5-.1.7-.3.4-.4.4-1 0-1.4z" />
-            </svg>
-          </div>
-          <h3>Waiting for others to finish using dumbills so you can use it?</h3>
-          <p>not in our gym we got
-            more than 50 individual
-            dumbills so no any of
-            our clients wait for thier
-            turn,there is no room for
-            wait</p>
+    </div>
+    <section class="hero">
+      <nav class="navbar">
+        <h1 class="webname">ChadGYM</h1>
+        <ul class="menu-container">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="coach.html">Coach</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero-detail">
+        <span class="date">Since 2000</span>
+        <h1>Forge your muscles at our strength sanctuary.</h1>
+        <span class="intro"
+          >Forge your muscle like iron with our expertise certified coaches at
+          12/7 to support you.</span
+        >
+        <button>
+          <a href="#Trainer" style="text-decoration: none; color: inherit"
+            >Explore More</a
+          >
+        </button>
+      </div>
+    </section>
+    <section class="card-gallery">
+      <div class="about-head">
+        <h1 id="Trainer">Trainers</h1>
+        <hr />
+        <span>Best certified Gym</span>
+      </div>
+      <div class="card-container" id="card-container">
+        <div class="card">
+          <img src="assets/gymcoach1.jpg" alt="" />
+          <h2>The cardio expects</h2>
+          <!-- Nutrition Coach -->
+          <span>with 12 years of experience</span>
+          <button>Get Appointment</button>
+        </div>
+        <div class="card">
+          <img src="assets/gymcoach2.jpg" alt="" />
+          <h2>Nutrition expertise</h2>
+          <!-- Nutrition Coach -->
+          <span>Diploma in cardiology</span>
+          <button>Get Appointment</button>
+        </div>
+        <div class="card">
+          <img src="assets/gymcoach3.jpg" alt="" />
+          <h2>The cardio expects</h2>
+          <!-- Nutrition Coach -->
+          <span>with 12 years of experience</span>
+          <button>Get Appointment</button>
+        </div>
+        <div class="card">
+          <img src="assets/gymcoach4.jpg" alt="" />
+          <h2>The cardio expects</h2>
+          <!-- Nutrition Coach -->
+          <span>with 12 years of experience</span>
+          <button>Get Appointment</button>
         </div>
       </div>
-      <div class="spec-card">
-        <div class="spec-card-detail">
-          <div class="arrow-up">
-            <svg style="height: 1.5rem; width: 2rem;display: block; margin: auto;"
-              enable-background="new 0 0 40 50" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path fill="white"
-                d="m16.9 13.4-4.2-4.2c-.4-.4-1-.4-1.4 0l-4.2 4.2c-.4.4-.4 1 0 1.4s1 .4 1.4 0l3.5-3.5 3.5 3.5c.2.2.4.3.7.3.3 0 .5-.1.7-.3.4-.4.4-1 0-1.4z" />
-            </svg>
+    </section>
+    <section class="spec">
+      <div class="about-head">
+        <h1>OUR SPECIALITIES</h1>
+        <hr style="width: 200px" />
+        <span>What makes out gym better than others?</span>
+      </div>
+      <div class="spec-card-container">
+        <div class="spec-card">
+          <div class="spec-card-detail">
+            <div class="arrow-up">
+              <svg
+                style="
+                  height: 1.5rem;
+                  width: 2rem;
+                  display: block;
+                  margin: auto;
+                "
+                enable-background="new 0 0 40 50"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="white"
+                  d="m16.9 13.4-4.2-4.2c-.4-.4-1-.4-1.4 0l-4.2 4.2c-.4.4-.4 1 0 1.4s1 .4 1.4 0l3.5-3.5 3.5 3.5c.2.2.4.3.7.3.3 0 .5-.1.7-.3.4-.4.4-1 0-1.4z"
+                />
+              </svg>
+            </div>
+            <h3>
+              Waiting for others to finish using dumbills so you can use it?
+            </h3>
+            <p>
+              not in our gym we got more than 50 individual dumbills so no any
+              of our clients wait for thier turn,there is no room for wait
+            </p>
           </div>
-          <h3>Waiting for others to finish using dumbills so you can use it?</h3>
-          <p>not in our gym we got
-            more than 50 individual
-            dumbills so no any of
-            our clients wait for thier
-            turn,there is no room for
-            wait</p>
+        </div>
+        <div class="spec-card">
+          <div class="spec-card-detail">
+            <div class="arrow-up">
+              <svg
+                style="
+                  height: 1.5rem;
+                  width: 2rem;
+                  display: block;
+                  margin: auto;
+                "
+                enable-background="new 0 0 40 50"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="white"
+                  d="m16.9 13.4-4.2-4.2c-.4-.4-1-.4-1.4 0l-4.2 4.2c-.4.4-.4 1 0 1.4s1 .4 1.4 0l3.5-3.5 3.5 3.5c.2.2.4.3.7.3.3 0 .5-.1.7-.3.4-.4.4-1 0-1.4z"
+                />
+              </svg>
+            </div>
+            <h3>
+              Waiting for others to finish using dumbills so you can use it?
+            </h3>
+            <p>
+              not in our gym we got more than 50 individual dumbills so no any
+              of our clients wait for thier turn,there is no room for wait
+            </p>
+          </div>
+        </div>
+        <div class="spec-card">
+          <div class="spec-card-detail">
+            <div class="arrow-up">
+              <svg
+                style="
+                  height: 1.5rem;
+                  width: 2rem;
+                  display: block;
+                  margin: auto;
+                "
+                enable-background="new 0 0 40 50"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="white"
+                  d="m16.9 13.4-4.2-4.2c-.4-.4-1-.4-1.4 0l-4.2 4.2c-.4.4-.4 1 0 1.4s1 .4 1.4 0l3.5-3.5 3.5 3.5c.2.2.4.3.7.3.3 0 .5-.1.7-.3.4-.4.4-1 0-1.4z"
+                />
+              </svg>
+            </div>
+            <h3>
+              Waiting for others to finish using dumbills so you can use it?
+            </h3>
+            <p>
+              not in our gym we got more than 50 individual dumbills so no any
+              of our clients wait for thier turn,there is no room for wait
+            </p>
+          </div>
         </div>
       </div>
-      
-    </div>
-  </section>
-  <section class="subscribe">
-    <h1>SUBSCRIBE</h1>
-    <span>Sign-up to our newsletter</span>
-    <input type="email" name="email" id="email" placeholder="email..">
-    <button>Submit</button>
-  </section>
-  <footer>
-    <div class="social">
-          <a href="#">
-            <img src="assets/icons/facebook-fill-w.svg" alt="">
-          </a>
-          <a href="#">
-            <img src="assets/icons/instagram-alt-w.svg" alt="">
-          </a>
-          <a href="#">
-            <img src="assets/icons/linkedin-with-circle-w.svg" alt="">
-          </a>
-          <a href="#">
-            <img src="assets/icons/social-instagram.svg" alt="">
-          </a>
-    </div>
-    <div class="extra-link">
-      <a href="#">Feedback</a>
-      <a href="#">Report</a>
-      <a href="./contact.html">Contact</a>
-    </div>
-  </footer>
-</body>
-
+    </section>
+    <section class="subscribe">
+      <h1>SUBSCRIBE</h1>
+      <span>Sign-up to our newsletter</span>
+      <input type="email" name="email" id="email" placeholder="email.." />
+      <button>Submit</button>
+    </section>
+    <footer>
+      <div class="social">
+        <a href="#">
+          <img src="assets/icons/facebook-fill-w.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="assets/icons/instagram-alt-w.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="assets/icons/linkedin-with-circle-w.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="assets/icons/social-instagram.svg" alt="" />
+        </a>
+      </div>
+      <div class="extra-link">
+        <a href="#">Feedback</a>
+        <a href="#">Report</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </footer>
+  </body>
 </html>

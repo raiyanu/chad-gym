@@ -1,19 +1,21 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html,body{
+html,
+body {
   background-color: whitesmoke;
   color: white;
   position: relative;
 }
-body{
+body {
   display: block;
   margin: auto;
   max-width: 1400px;
+  scroll-behavior: smooth;
 }
-.icon{
+.icon {
   height: 12px;
   aspect-ratio: 1/1;
   background-color: rgb(255, 255, 255);

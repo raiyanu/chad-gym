@@ -1,0 +1,125 @@
+.chatbot {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: rgb(255, 255, 255);
+  z-index: 999;
+  border-radius: 50%;
+  padding: 0.5rem;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  height: 3rem;
+  width: 3rem;
+}
+.chatbot img {
+  height: 2rem;
+  width: 2rem;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+.chatbot-modal {
+  z-index: 9999;
+  position: fixed;
+  height: 100vh;
+  height: 100dvh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  right: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.chat-container {
+  height: 460px;
+  max-height: 100vh;
+  max-height: 100dvh;
+  width: 300px;
+  max-width: 100vw;
+  background-color: whitesmoke;
+  border-radius: 0.5rem;
+}
+.chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  gap: 2rem;
+  height: 40px;
+}
+.chat-header h3 {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.chat-message-container {
+  height: 370px;
+  overflow-y: scroll;
+  padding: 1rem 0.5rem;
+}
+.chat-message-container::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.chat-message-container li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+.message-sent,
+.message-recieved {
+  display: flex;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.message-recieved p,
+.message-sent p {
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.message-sent p {
+  text-align: right;
+  background: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-left: auto;
+}
+.message-recieved p {
+  text-align: left;
+  background: white;
+  color: black;
+  padding: 0.5rem 1rem;
+}
+.visible {
+  display: flex;
+}
+.send-message {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1px 5px;
+}
+.send-message input {
+  width: 80%;
+  height: 40px;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  font-family: "Poppins", sans-serif;
+}
+.send-message button {
+  width: 20%;
+  height: 40px;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
