@@ -1,297 +1,298 @@
 .form1,
 .form2 {
-    position: absolute;
-    height: 100%;
-    transition: .2s;
-    visibility: hidden;
+  position: absolute;
+  height: 100%;
+  transition: 0.2s;
+  visibility: hidden;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 .form-cover {
-    border-radius: .6rem;
+  border-radius: 0.6rem;
 }
 
 .form1 {
-    transform: translateX(100%);
+  transform: translateX(100%);
 }
 
 .form2 {
-    transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 
 .be-visible {
-    transition: .5s;
-    visibility: visible;
-    transform: translateX(0%);
+  transition: 0.5s;
+  visibility: visible;
+  transform: translateX(0%);
 }
 
 .sep-name {
-    display: flex;
+  display: flex;
 }
 
 .sep-name .my-input {
-    width: 50%;
-    margin: 0;
+  width: 50%;
+  margin: 0;
 }
 
 .form2 h2 {
-    margin: .1rem;
+  margin: 0.1rem;
 }
 
 .agreement {
-    margin: 0px 35px;
+  margin: 0px 35px;
 }
 
 .agreement label {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-
-
 .bgpic {
-    height: 400px;
+  height: 400px;
 }
 
 body {
-    background-color: rgb(206, 206, 206);
-    height: 100vh;
-    height: 100dvh;
+  background-color: rgb(206, 206, 206);
+  height: 100vh;
+  height: 100dvh;
 }
 
 .center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .form {
-    flex-shrink: 0;
-    flex-grow: 0;
-    background-color: rgba(0, 0, 0, 0.363);
-    height: 70vh;
-    height: 70dvh;
-    width: 60%;
-    display: flex;
-    border-radius: 1rem;
-    overflow: hidden;
-    transition: 1s all;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    min-height: 450px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-color: rgba(0, 0, 0, 0.363);
+  height: 70vh;
+  height: 70dvh;
+  width: 60%;
+  display: flex;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: 1s all;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  min-height: 450px;
 }
 
 .card {
-    width: 45%;
-    height: 100%;
+  width: 45%;
+  height: 100%;
 }
 
 .card img {
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .form-cover {
-    width: 55%;
-    display: flex;
-    overflow: hidden;
-    position: relative;
+  width: 55%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
 }
 
 .form-input {
-    flex: 0 0 auto;
-    width: 100%;
-    padding: 0rem 1rem;
-    padding-bottom: .5rem;
+  flex: 0 0 auto;
+  width: 100%;
+  padding: 0rem 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .welcome-line {
-    height: 1px;
-    margin: 0rem 5rem;
-    color: rgba(128, 128, 128, 0.1);
+  height: 1px;
+  margin: 0rem 5rem;
+  color: rgba(128, 128, 128, 0.1);
 }
 
 .form-input h1 {
-    margin-top: 15px;
-    font-size: 2rem;
+  margin-top: 15px;
+  font-size: 2rem;
 }
 
 .form-input h2 {
-    font-family: monospace;
-    font-weight: 600;
-    font-size: 1.6rem;
-    text-align: center;
-    margin: 1rem 0rem 1rem 0rem;
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 1rem 0rem 1rem 0rem;
 }
 
 .mr-sign-up-para {
-    margin: .5rem;
+  margin: 0.5rem;
 }
 
 .form-input h1,
 .form-input p {
-    text-align: center;
+  text-align: center;
 }
 
 .form-input p {
-    font-size: .9rem;
-    font-weight: 500;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .my-input {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin: 5px 20px;
-    margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 5px 20px;
+  margin-bottom: 10px;
 }
 
 .my-input label {
-    transition: .2s ease;
-    position: absolute;
-    top: 50%;
-    left: 1rem;
-    color: rgba(0, 0, 0, 0.377);
-    transform: translateY(-50%);
-    pointer-events: none;
+  transition: 0.2s ease;
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  color: rgba(0, 0, 0, 0.377);
+  transform: translateY(-50%);
+  pointer-events: none;
 }
-a{
-color: white;
+a {
+  color: white;
 }
-.my-input input , .my-input textarea {
-    height: 2.5rem;
-    width: 100%;
-    outline: none;
-    border-radius: .7rem;
-    border: 1px solid grey;
-    /* border-radius: 0; */
-    /* border: none; */
-    /* border-bottom: 1px solid grey; */
-    padding-left: 1rem;
-    font-size: 1rem;
-    padding-top: 1rem;
-    padding-bottom: .2rem;
-    margin: 0 .5rem 0 .5rem;
+.my-input input,
+.my-input textarea {
+  height: 2.5rem;
+  width: 100%;
+  outline: none;
+  border-radius: 0.7rem;
+  border: 1px solid grey;
+  /* border-radius: 0; */
+  /* border: none; */
+  /* border-bottom: 1px solid grey; */
+  padding-left: 1rem;
+  font-size: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 0.2rem;
+  margin: 0 0.5rem 0 0.5rem;
 }
-.my-input textarea{
-    padding-top: .5rem;
-    height: auto;
+.my-input textarea {
+  padding-top: 0.5rem;
+  height: auto;
 }
-.my-input input:focus~label,
-.my-input input:valid~label,
-.my-input textarea:focus~label {
-    transform: translateY(-110%);
-    color: rgb(21, 235, 250);
-    font-size: .75rem;
+.my-input input:focus ~ label,
+.my-input input:valid ~ label,
+.my-input textarea:focus ~ label {
+  transform: translateY(-110%);
+  color: rgb(21, 235, 250);
+  font-size: 0.75rem;
 }
 
 .my-input input:focus,
 .my-input input:valid {
-    /* border-bottom: 1px solid cyan; */
-    border: 1px solid cyan;
+  /* border-bottom: 1px solid cyan; */
+  border: 1px solid cyan;
 }
 
 .form-input button {
-    height: 2.5rem;
-    width: 90%;
-    display: inline;
-    margin: 5px 20px;
-    border-radius: 1rem;
-    border: none;
-    background-color: red;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: .3s ease;
+  height: 2.5rem;
+  width: 90%;
+  display: inline;
+  margin: 5px 20px;
+  border-radius: 1rem;
+  border: none;
+  background-color: red;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .form-input button:hover {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .extra-option {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .5rem;
-    margin: 5px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 5px 0px;
 }
 
 .extra-option hr {
-    width: 50px;
-    height: 2px;
-    color: rgba(128, 128, 128, 0.144);
+  width: 50px;
+  height: 2px;
+  color: rgba(128, 128, 128, 0.144);
 }
 
 .extra-social-option {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    margin: 10px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 10px 5px;
 }
 
 .extra-social-option img {
-    height: 1.5rem;
-    aspect-ratio: 1/1;
-    object-fit: cover;
+  height: 1.5rem;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 
 .forgot {
-    text-align: center;
-    display: block;
-    font-size: 1rem;
-    color: rgb(131 116 221);
-    cursor: pointer;
+  text-align: center;
+  display: block;
+  font-size: 1rem;
+  color: rgb(131 116 221);
+  cursor: pointer;
+  width: 100%;
+}
+.dif-auth {
+  display: inline;
+  font-size: 1rem;
+  color: rgb(131 116 221);
+  cursor: pointer;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .form {
+    width: 80%;
+    background-color: rgb(30, 30, 30);
+  }
+}
+
+@media (max-width: 800px) {
+  .form {
+    width: 90%;
+    background-color: rgb(30, 30, 30);
+  }
+}
+
+@media (max-width: 700px) {
+  .form {
     width: 100%;
-}
-.dif-auth{
-    display: inline;
-    font-size: 1rem;
-    color: rgb(131 116 221);
-    cursor: pointer;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 0rem;
+  }
+
+  .card {
     width: 100%;
-}
-@media (max-width:1000px) {
-    .form {
-        width: 80%;
-    }
-}
+  }
 
-@media (max-width:800px) {
-    .form {
-        width: 90%;
-    }
-}
+  .form-input {
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.452);
+    width: 100%;
+  }
 
-@media (max-width:700px) {
-    .form {
-        width: 100%;
-        flex-direction: column;
-        height: 100%;
-        border-radius: 0rem;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .form-input {
-        border-radius: 1rem;
-        background-color: rgba(0, 0, 0, 0.452);
-        width: 100%;
-    }
-
-    .form-cover {
-        position: absolute;
-        height: 450px;
-        width: 95%;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: .5rem;
-    }
-
+  .form-cover {
+    position: absolute;
+    height: 450px;
+    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0.5rem;
+  }
 }
