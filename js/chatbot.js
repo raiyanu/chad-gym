@@ -5,11 +5,11 @@ function switch_chatbot() {
 document.addEventListener("DOMContentLoaded", function () {
   // Create a new list item
   var newMessage = document.createElement("li");
-  newMessage.className = "message-sent"; // You can change this to 'message-received' if needed
+  newMessage.className = "message-recieved"; // You can change this to 'message-received' if needed
 
   // Create a new paragraph element and add text content
   var newParagraph = document.createElement("p");
-  newParagraph.textContent = "This is a new message!";
+  newParagraph.textContent = "Hello there! how i can help you?";
 
   // Append the paragraph to the list item
   newMessage.appendChild(newParagraph);
