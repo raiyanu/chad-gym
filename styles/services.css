@@ -66,6 +66,8 @@
 }
 .hero {
   position: relative;
+  height: 250px;
+  padding-top: 100px;
 }
 .hero-text-container span {
   font-size: 0.9rem;
@@ -110,4 +112,23 @@
   .hero-service:nth-child(even) {
     flex-direction: column-reverse;
   }
+}
+.hero h1,
+.hero p {
+  text-align: center;
+  font-family: sans-serif;
+}
+.hero h1 {
+  font-size: 3rem;
+  color: white;
+  font-weight: 700;
+}
+.hero p {
+  margin-top: 5px;
+  font-size: 1rem;
+}
+.hero span {
+  margin-top: 12px;
+  display: block;
+  text-align: center;
 }
