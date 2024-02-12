@@ -1,106 +1,89 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ChadGYM | Contact</title>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/form-activity.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/top.css" />
-    <link rel="stylesheet" href="styles/hero.css" />
-    <link rel="stylesheet" href="styles/card.css" />
-    <link rel="stylesheet" href="styles/spec.css" />
-    <link rel="stylesheet" href="styles/bottom.css" />
-    <link rel="stylesheet" href="styles/contact-form.css" />
-    <style>
-      .hero {
-        /* background: url('../assets/hero.jpg'); */
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-          url(../assets/bg-2.jpg);
-        object-fit: cover;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        width: 100%;
-        height: 100vh;
-        height: 100dvh;
-        max-height: 900px;
-        background-position: fixed;
-        backdrop-filter: brightness(12%);
-      }
-    </style>
-  </head>
 
-  <body class="center hero">
-    <nav class="navbar">
-      <h1 class="webname">ChadGYM</h1>
-      <ul class="menu-container">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="coach.html">Coach</a></li>
-        <li><a href="product.html">Product</a></li>
-        <li class="active"><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="form .center">
-      <div class="card">
-        <img src="assets/gymcoach1.jpg" class="bgpic" alt="Img of leaves" />
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChadGYM | Contact</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/form-activity.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/top.css" />
+  <link rel="stylesheet" href="styles/hero.css" />
+  <link rel="stylesheet" href="styles/card.css" />
+  <link rel="stylesheet" href="styles/spec.css" />
+  <link rel="stylesheet" href="styles/bottom.css" />
+  <link rel="stylesheet" href="styles/contact-form.css" />
 
-      <div class="form-cover">
-        <div class="form-input form1 be-visible" id="form1">
-          <h1 style="font-weight: 500">Contact</h1>
-          <hr class="welcome-line" />
-          <p>Leave message we'll contact you as soon as possible</p>
-          <div class="myemail my-input" style="margin-top: 1rem">
-            <input type="text" id="name" required />
-            <label>Email or phone</label>
-          </div>
-          <div class="mypass my-input">
-            <textarea
-              style="resize: vertical; max-height: 170px; height: 120px"
-              name=""
-              rows="5"
-              maxlength="200"
-              placeholder="Your Inquery"
-            ></textarea>
-          </div>
-          <button type="button" onclick="switch_entry()">Submit</button>
+  <style>
+    .hero {
+      /* background: url('../assets/hero.jpg'); */
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../assets/bg-2.jpg);
+      object-fit: cover;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      width: 100%;
+      height: 100vh;
+      height: 100dvh;
+      max-height: 900px;
+      background-position: fixed;
+      backdrop-filter: brightness(12%);
+    }
+  </style>
+</head>
 
-          <div class="extra-option">
-            <hr />
-            <p>or</p>
-            <hr />
-          </div>
-          <div class="extra-social-option">
-            <!-- these icons taken from https://www.iconfinder.com for free version -->
-            <img
-              style="cursor: pointer"
-              src="assets/icons/facebook-fill.svg"
-              alt=""
-            />
-            <img
-              style="cursor: pointer"
-              src="assets/icons/instagram-alt.svg"
-              alt=""
-            />
-            <img
-              style="cursor: pointer"
-              src="assets/icons/linkedin-with-circle.svg"
-              alt=""
-            />
-          </div>
+<body class="center hero">
+  <nav class="navbar" style="background: linear-gradient(180deg, rgba(0,0,0,.1) , rgba(0,0,0,.3));
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,.1);">
+    <h1 class="webname">ChadGYM</h1>
+    <ul class="menu-container">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="coach.html">Coach</a></li>
+      <li><a href="product.html">Product</a></li>
+      <li class="active"><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="form .center">
+    <div class="card">
+      <img style="filter: brightness(90%);" src="assets/gymcoach1.jpg" class="bgpic" alt="Img of leaves" />
+    </div>
+
+    <div class="form-cover">
+      <div class="form-input form1 be-visible" id="form1">
+        <h1 style="font-weight: 500">Contact</h1>
+        <hr class="welcome-line" />
+        <p>Leave message we'll contact you as soon as possible</p>
+        <div class="myemail my-input" style="margin-top: 1rem">
+          <input type="text" id="email" required />
+          <label>Email or phone</label>
         </div>
-        <div class="form-input form2" id="form2">
-          <svg
-            style="
+        <div class="mypass my-input">
+          <textarea style="resize: vertical; max-height: 170px; height: 120px" name="" rows="5" maxlength="200"
+            placeholder="Your Inquery" id="message"></textarea>
+        </div>
+        <button type="button" id="submit" class="" onclick="
+            console.log(`clicked!`); send_message(); switch_entry(); ">Submit</button>
+
+        <div class="extra-option">
+          <hr />
+          <p>or</p>
+          <hr />
+        </div>
+        <div class="extra-social-option">
+          <!-- these icons taken from https://www.iconfinder.com for free version -->
+          <img style="cursor: pointer" src="assets/icons/facebook-fill.svg" alt="" />
+          <img style="cursor: pointer" src="assets/icons/instagram-alt.svg" alt="" />
+          <img style="cursor: pointer" src="assets/icons/linkedin-with-circle.svg" alt="" />
+        </div>
+      </div>
+      <div class="form-input form2" id="form2">
+        <svg style="
               display: block;
               height: 3rem;
               width: 3rem;
@@ -108,31 +91,27 @@
               color: white;
               margin-left: auto;
               margin-right: auto;
-            "
-            xmlns="http://www.w3.org/2000/svg"
-            height="30"
-            viewBox="0 0 30 30"
-            width="30"
-          >
-            <g fill="white">
-              <path
-                d="m22.5 10.987c0 .4-.16.79-.45 1.06l-7.99 8c-.24.26-.64.44-1.06.44s-.82-.18-1.1-.48l-3.96-3.96c-.27-.26-.44-.65-.44-1.06s.17-.8.46-1.08c.48-.51 1.56-.54 2.12.04l2.92 2.93 6.94-6.95c.52-.55 1.58-.56 2.14.02.25.24.42.63.42 1.04z"
-              />
-              <path
-                d="m15 2c7.168 0 13 5.832 13 13s-5.832 13-13 13-13-5.832-13-13 5.832-13 13-13m0-2c-8.284 0-15 6.716-15 15s6.716 15 15 15 15-6.716 15-15-6.716-15-15-15z"
-              />
-            </g>
-          </svg>
-          <h1 style="font-weight: 200">Your request has been submitted</h1>
-          <h2 style="font-family: Courier, monospace">
-            Please wait for our response through your email
-          </h2>
+            " xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 0 30 30" width="30">
+          <g fill="white">
+            <path
+              d="m22.5 10.987c0 .4-.16.79-.45 1.06l-7.99 8c-.24.26-.64.44-1.06.44s-.82-.18-1.1-.48l-3.96-3.96c-.27-.26-.44-.65-.44-1.06s.17-.8.46-1.08c.48-.51 1.56-.54 2.12.04l2.92 2.93 6.94-6.95c.52-.55 1.58-.56 2.14.02.25.24.42.63.42 1.04z" />
+            <path
+              d="m15 2c7.168 0 13 5.832 13 13s-5.832 13-13 13-13-5.832-13-13 5.832-13 13-13m0-2c-8.284 0-15 6.716-15 15s6.716 15 15 15 15-6.716 15-15-6.716-15-15-15z" />
+          </g>
+        </svg>
+        <h1 style="font-weight: 200">Your request has been submitted</h1>
+        <h2 style="font-family: Courier, monospace">
+          Please wait for our response through your email
+        </h2>
 
-          <button type="button" onclick="gohome()">Go to Home</button>
-        </div>
+        <!-- <button type="button" onclick="gohome()">Go to Home</button> -->
+        <button type="button" onclick="switch_entry()">Go to Home</button>
       </div>
     </div>
-    <script src="./js/contact.js"></script>
-  </body>
-</html>
+  </div>
+  <script src="./js/contact.js"></script>
+  <script src="https://unpkg.com/realm-web/dist/bundle.iife.js"></script>
+  <script src="./js/api.js"></script>
+</body>
 
+</html>

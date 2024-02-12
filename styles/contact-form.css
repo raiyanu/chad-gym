@@ -191,6 +191,9 @@ a {
   /* border-bottom: 1px solid cyan; */
   border: 1px solid cyan;
 }
+.disabled-buttom {
+  background-color: rgb(232, 175, 175) !important;
+}
 
 .form-input button {
   height: 2.5rem;
