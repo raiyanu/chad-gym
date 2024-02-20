@@ -1,5 +1,9 @@
 @charset "utf-8";
-
+.item {
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
 body {
   min-height: 100vh;
   min-height: 100dvh;
@@ -239,7 +243,7 @@ button {
 
 @media (min-width: 768px) and (max-width: 991px) {
   h2 {
-    margin-bottom: 32px;
+    margin-bottom: 15px;
   }
 
   h3 {
@@ -444,4 +448,3 @@ button {
 .extra-link a {
   color: whitesmoke;
 }
-
