@@ -4,6 +4,7 @@ function switch_entry() {
   let form2 = document.getElementById("form2");
   form2.classList.toggle("be-visible");
   console.log("clicked");
+  gohome();
 }
 function gohome() {
   window.location.href = "/";
