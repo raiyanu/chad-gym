@@ -15,7 +15,7 @@
 .about-head hr {
   width: 100px;
 }
-.about-head h1{
+.about-head h1 {
   color: black;
 }
 .about-head span {
@@ -31,7 +31,7 @@
   flex-wrap: wrap;
   gap: 3rem;
 }
-.card{
+.card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,6 +62,10 @@
   box-shadow: 2px 2px 2px grey;
   transition: all 250ms ease-in-out;
   cursor: pointer;
+}
+.card button a {
+  text-decoration: none;
+  color: auto;
 }
 .card button:hover {
   transform: translateY(-2px) scale(1.02);

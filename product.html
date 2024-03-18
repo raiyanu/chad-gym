@@ -16,9 +16,30 @@
     <link rel="stylesheet" href="styles/hero.css" />
     <link rel="stylesheet" href="styles/bottom.css" />
     <link rel="stylesheet" href="styles/product.css" />
+    <link rel="stylesheet" href="./styles/chatbot.css" />
+    <script src="./js/chatbot.js"></script>
 </head>
 
 <body class="center">
+    <div class="chatbot" id="chatbot" onclick="switch_chatbot()">
+        <img src="./assets/icons/bot.svg" alt="" />
+    </div>
+    <div class="chatbot-modal" id="chatbot-modal">
+        <div class="chat-container">
+            <div class="chat-header">
+                <img src="./assets/icons/bot.svg" alt="BOT" />
+                <h3>ChadGym Bot</h3>
+                <img src="./assets/icons/arrow-down.svg" style="cursor: pointer" alt="X" onclick="switch_chatbot()" />
+            </div>
+            <ul class="chat-message-container"></ul>
+            <div class="send-message">
+                <input type="text" id="message-input" />
+                <button>
+                    <img src="./assets/icons/sent.svg" alt="" />
+                </button>
+            </div>
+        </div>
+    </div>
     <nav class="navbar">
         <h1 class="webname">ChadGYM</h1>
         <ul class="menu-container">
@@ -77,14 +98,24 @@
                 <div class="item-desc">
                     <h3> Kiaz Branded Dumbells </h3>
                     <p>Transform your home gym with our top-quality dumbbells, crafted for durability and performance.
-                        From toning to muscle building, achieve your fitness aspirations with ease!</p>
+                        From toning to muscle building, achieve your fitness aspirations with ease! <br>
+                        <button
+                            style="padding: 0.4rem 1rem;font-size: 1rem; font-weight: 600; background: transparent; border: 1px solid white; color: whitesmoke;border-radius: 5px; cursor:pointer;"
+                            onclick="window.location.href = 'https://www.amazon.in/Lifelong-Dumbbells-Equipment-Exercise-Warranty/dp/B09W5NW9H8/ref=sr_1_5?dib=eyJ2IjoiMSJ9.7B9Qj-9QDZy2UQBp9B5zdCuDqBXaKgAqW38Ap2c7ERU38exjxbUsb3LsEOZq3Uk8aYv17fhNVX7Cp65_1Ery6n_FqYWDqtBKE1DCdqRmXCsDNTyYua0W03o0nxeGuVyq4TFd-dKp0E9evztoeaGLLljdxpXHWMu8zoUPOW47rj95llB-FKQLRKjAamhSZDvRkyPjIqSIHfb4AHZWtbeoJj7M4inDCLb9OajjtLwOJlypUlPJjELsZ-JNpvZsE0niXdYk-SuSmea2NJbV7ePZjK0QBDJOYTiVppD2gXyrgtI.pwa1pdjVlXjM-k3FaEM15o9C4FIR7BjLl6J58Tn1nVw&dib_tag=se&keywords=dumbbell%2Bset&th=1';">Get
+                            now</button>
+                    </p>
                 </div>
             </div>
             <div class="item" style="background: url(./assets/equipment/matt.jpg); ">
                 <div class="item-desc">
                     <h3>Calvin kelvin Matt</h3>
                     <p>Find your balance and peace with our premium yoga mats, designed for comfort and stability.
-                        Elevate your practice and connect mind, body, and soul on a foundation of quality and support!
+                        Elevate your practice and connect mind, body, and soul on a foundation of quality and
+                        support!<br>
+                        <button
+                            style="padding: 0.4rem 1rem;font-size: 1rem; font-weight: 600; background: transparent; border: 1px solid white; color: whitesmoke;border-radius: 5px; cursor:pointer;"
+                            onclick="window.location.href = 'https://www.amazon.in/Boldfit-Women-Exercise-workout-Workout/dp/B0B7599YRJ/ref=sr_1_5?dib=eyJ2IjoiMSJ9.1SloqLekbcleOgBrA8koZrJfwv0FgPM5SJ1Z-t0mubQqwHY9l-pL8XnGxJSErtaHq7ESlq0MMYfDP2_UuLmJQOvKstojAI6pKkyB8nbxw-RW5pSrdCgGa5uU7xolZOCrS4RReP1EwDuR1QdMCMrbZ9n3pEKoPsFsAB4IdboD2jvzOIoXTp8U9IQcVxxd1psNP-tzfL0R4FxhM0gZ_SpGXDTEk01UvoSVFnNUZ8Dy5Fqz94NQwycIeWn8trmbPtF0KsPyenwOI-dCIGw5F8a6bc4K9esIPnbR8-XWqTG-K8Q.-vZIUXu78OtBsXLgiNCx17fnZHHVQ52rqznvOx9CRAI&dib_tag=se&keywords=yoga+mat';">Get
+                            now</button>
                     </p>
                 </div>
             </div>
@@ -92,14 +123,25 @@
                 <div class="item-desc">
                     <h3>Kettlebell</h3>
                     <p>Elevate your strength training with our professional-grade kettlebells, engineered for dynamic
-                        workouts and muscle engagement, unlocking your full potential.</p>
+                        workouts and muscle engagement, unlocking your full potential.<br>
+                        <button
+                            style="padding: 0.4rem 1rem;font-size: 1rem; font-weight: 600; background: transparent; border: 1px solid white; color: whitesmoke;border-radius: 5px; cursor:pointer;"
+                            onclick="window.location.href = 'https://www.amazon.in/Amazon-Brand-Symactive-Kettlebell-Exercises/dp/B08TJTQ52V/ref=sr_1_5?dib=eyJ2IjoiMSJ9.RbLma9AvrcW8f25xVOQwi3VRqSmYj8EPrV5tTqN7bDeg1h8dGC4PbDo_lDP3ezOHsSL6pEDvT-Dth-15vnYmBF_obg0QcaXGtGKrSU3RQjMLmhP02-gVF5OkzWwszNp3ihm1EX6xJeO_LZSa5GVx0BzV6SrBGj55Oqad1jBjS8_lLBHkpHRNQFOxwFVc95soPlrNE1Jk-QKsnXkBBGf4dZNWbyjaHW8RILyAvdkDa61Em7ahhALtOxEBPt9ALUU5FKRHLKplxaL7Tl-D-G7b0ZlqeLG0w1GydYszfyGlKMk.CfnpcfO7sW985_IGR6yzyHl0A1COqoFKEmdmb5l4TKA&dib_tag=se&keywords=Kettlebell';">Get
+                            now</button>
+                    </p>
+                    </p>
                 </div>
             </div>
             <div class="item" style="background-image: url(./assets/equipment/hopper\ rope.jpg);">
                 <div class="item-desc">
                     <h3>BattleRope</h3>
                     <p>Elevate your fitness game with our Battle Ropes, perfect for intense cardio and strength
-                        training. Unleash your potential and conquer your goals with every swing!</p>
+                        training. Unleash your potential and conquer your goals with every swing!<br>
+                        <button
+                            style="padding: 0.4rem 1rem;font-size: 1rem; font-weight: 600; background: transparent; border: 1px solid white; color: whitesmoke;border-radius: 5px; cursor:pointer;"
+                            onclick="window.location.href = 'https://www.amazon.in/Kobo-Professional-Battle-Exercise-1-5-inch/dp/B0BQDNDKLC/ref=sr_1_5?dib=eyJ2IjoiMSJ9.IBk4qLWcmo31plE12nG45jOO4Yi_mNbR-MV21YxfgYobVoC-9Bev2k-WhI0zzpVa70CZLSlmpfAr5XySw3sXWt5NJ7z42APdSXsNMGa5PRgrv44Hz7hcuW4gKOcLR7WjVI96v_EJHeAuH_zpprUKHSMnWKJ170d-FLJKrwUhIbxCmrtjukuVmz6qSXBZLdeH6mJRdqjST9Xsc6fN9XCJ76QIrmwZ0EN4y48W9AQxfqcM_qU6uMXDWLp-dR17HvyfSOQdTQxROwxBgLB-Mkk2gIE13k-2aotzwVz16oKVLkk.dUHDI5tMlkl2VMThBacQnEEVQyd5CwCveQxGrRk2-ZI&dib_tag=se&keywords=battle+rope';">Get
+                            now</button>
+                    </p>
                 </div>
             </div>
             <div class="item" style="background-image: url(./assets/equipment/indoor\ cycling.jpg);">
@@ -107,7 +149,12 @@
                     <h3>indoor cycling tech</h3>
                     <p>Revitalize your fitness routine with our indoor cycling machine, delivering an immersive workout
                         experience. Pedal towards your goals with convenience and intensity, right from the comfort of
-                        your home!</p>
+                        your home!<br>
+                        <button
+                            style="padding: 0.4rem 1rem;font-size: 1rem; font-weight: 600; background: transparent; border: 1px solid white; color: whitesmoke;border-radius: 5px; cursor:pointer;"
+                            onclick="window.location.href = 'https://www.amazon.in/Reach-Exercise-Handles-Adjustable-Cushioned/dp/B07DQMSZJF/ref=sr_1_3?dib=eyJ2IjoiMSJ9.b7Qvv-K9trkS52EjFfy9R8B7kt_lOjvAMftxdgKewRP9-gL6jEY6TlDsCpPFH0bQOFHq0G-qqRS1PBVmLz6qGtLn-eGc3YCFXqHr6ffJ6CvrKP2BZYjKVNXcYMohJ6kIaYQKXoEb-bmukLYEOpYO42jJuKFmyUeECVC0pkzlITciyROFemThDvIlBmb_dyk4SY6qJqudHa2Kbet-XusdQUqo4pRVDjelB-0ur-PeUrY.UY5ejBDpXLCmR_HP8qGBC-Fo1VpnT_AyPQz86JrUnCg&dib_tag=se&keywords=indoor+cycling';">Get
+                            now</button>
+                    </p>
                 </div>
             </div>
             <div class="item" style="background-image: url(./assets/equipment/powerlift.jpg);">
@@ -115,26 +162,28 @@
                     <h3>powerlifter with stand</h3>
                     <p>Maximize your lifting potential with our powerlifter and stand, engineered for stability and
                         performance. Elevate your strength training regimen with confidence and precision, reaching new
-                        heights in your fitness journey!</p>
+                        heights in your fitness journey!<br>
+                        <button
+                            style="padding: 0.4rem 1rem;font-size: 1rem; font-weight: 600; background: transparent; border: 1px solid white; color: whitesmoke;border-radius: 5px; cursor:pointer;"
+                            onclick="window.location.href = 'https://www.amazon.in/RISE-UP-Steel-Vertical-Capacity/dp/B08NK582M9/ref=sr_1_4?dib=eyJ2IjoiMSJ9.V-7iJhlrFlnvwRqbvvhPZ6EubBk6e8MzWU42D2YmGl71XgBUWpZkBEPgJKYoc7qfnlfI-vqCZhJAyUWa67jZkv8eGZWKwrFoYTlcgNCJexp7juH_SY6mCuKsAAytFUeyNvuOAT4ra2vgOwsfKiEQzqBklBqMdxp285iLskMFAH8IeU-b0SZxlyXX3ACU_SGaLn_s5r_8by-AWP20QuupiZY-ak3K078HZV7FmMJKuTUZ9jS2nrGwsf3yDAEx555gnbTQVvLjqoFV9zgGC7OleqtfZhjbuC_URMqMK6RpV3w.3nVMsbY_bXxIoHSG4X6iqVIqTt3LPiem327-y_oiSEE&dib_tag=se&keywords=powerlifter+with+stand';">Get
+                            now</button>
+                    </p>
                 </div>
             </div>
-        </div>
         </div>
     </section>
     <footer>
         <div class="social">
-            <a href="#">
+            <a href="https://www.facebook.com/GoldsGymIndia/" target="_blank">
                 <img src="assets/icons/facebook-fill.svg" alt="">
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/gymandfitness/?hl=en" target="_blank">
                 <img src="assets/icons/instagram-alt.svg" alt="">
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/groups/3376929/" target="_blank">
                 <img src="assets/icons/linkedin-with-circle.svg" alt="">
             </a>
-            <a href="#">
-                <img src="assets/icons/social-instagram.svg" alt="">
-            </a>
+
         </div>
         <div class="extra-link">
             <a href="./contact.html">Feedback</a>

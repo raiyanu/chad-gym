@@ -35,9 +35,31 @@
       backdrop-filter: brightness(12%);
     }
   </style>
+  <script src="./js/chatbot.js"></script>
+  <link rel="stylesheet" href="./styles/chatbot.css" />
+
 </head>
 
 <body class="center hero">
+  <div class="chatbot" id="chatbot" onclick="switch_chatbot()">
+    <img src="./assets/icons/bot.svg" alt="" />
+  </div>
+  <div class="chatbot-modal" id="chatbot-modal">
+    <div class="chat-container">
+      <div class="chat-header">
+        <img src="./assets/icons/bot.svg" alt="BOT" />
+        <h3>ChadGym Bot</h3>
+        <img src="./assets/icons/arrow-down.svg" style="cursor: pointer" alt="X" onclick="switch_chatbot()" />
+      </div>
+      <ul class="chat-message-container"></ul>
+      <div class="send-message">
+        <input type="text" id="message-input" />
+        <button>
+          <img src="./assets/icons/sent.svg" alt="" />
+        </button>
+      </div>
+    </div>
+  </div>
   <nav class="navbar" style="background: linear-gradient(180deg, rgba(0,0,0,.1) , rgba(0,0,0,.3));
   box-shadow: 1px 1px 1px 1px rgba(0,0,0,.1);">
     <h1 class="webname">ChadGYM</h1>
@@ -67,8 +89,7 @@
           <textarea style="resize: vertical; max-height: 170px; height: 120px" name="" rows="5" maxlength="200"
             placeholder="Your Inquery" id="message"></textarea>
         </div>
-        <button type="button" id="submit" class="" onclick="
-            console.log(`clicked!`); send_message(); switch_entry(); ">Submit</button>
+        <button type="button" id="submit" class="" onclick="switch_entry()">Submit</button>
 
         <div class="extra-option">
           <hr />
@@ -77,9 +98,15 @@
         </div>
         <div class="extra-social-option">
           <!-- these icons taken from https://www.iconfinder.com for free version -->
-          <img style="cursor: pointer" src="assets/icons/facebook-fill.svg" alt="" />
-          <img style="cursor: pointer" src="assets/icons/instagram-alt.svg" alt="" />
-          <img style="cursor: pointer" src="assets/icons/linkedin-with-circle.svg" alt="" />
+          <a href="https://www.facebook.com/GoldsGymIndia/" target="_blank">
+            <img style="cursor: pointer" src="assets/icons/facebook-fill.svg" alt="" />
+          </a>
+          <a href="https://www.instagram.com/gymandfitness/?hl=en" target="_blank">
+            <img style="cursor: pointer" src="assets/icons/instagram-alt.svg" alt="" />
+          </a>
+          <a href="https://www.linkedin.com/groups/3376929/" target="_blank">
+            <img style="cursor: pointer" src="assets/icons/linkedin-with-circle.svg" alt="" />
+          </a>
         </div>
       </div>
       <div class="form-input form2" id="form2">

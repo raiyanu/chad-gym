@@ -14,9 +14,29 @@
   <link rel="stylesheet" href="./styles/chatbot.css" />
   <link rel="stylesheet" href="./styles/services.css" />
   <script src="./js/chatbot.js"></script>
+  <link rel="stylesheet" href="./styles/chatbot.css" />
 </head>
 
 <body>
+  <div class="chatbot" id="chatbot" onclick="switch_chatbot()">
+    <img src="./assets/icons/bot.svg" alt="" />
+  </div>
+  <div class="chatbot-modal" id="chatbot-modal">
+    <div class="chat-container">
+      <div class="chat-header">
+        <img src="./assets/icons/bot.svg" alt="BOT" />
+        <h3>ChadGym Bot</h3>
+        <img src="./assets/icons/arrow-down.svg" style="cursor: pointer" alt="X" onclick="switch_chatbot()" />
+      </div>
+      <ul class="chat-message-container"></ul>
+      <div class="send-message">
+        <input type="text" id="message-input" />
+        <button>
+          <img src="./assets/icons/sent.svg" alt="" />
+        </button>
+      </div>
+    </div>
+  </div>
   <section class="hero">
     <nav class="navbar">
       <h1 class="webname">ChadGYM</h1>
@@ -38,8 +58,7 @@
   <section class="services">
     <div class="hero-service">
       <div class="hero-img-container">
-        <!-- FIX : oh hey there -->
-        <img src="./assets/gymcoach1.jpg" alt="" />
+        <img src="./assets/gymcoach6.png" alt="" />
       </div>
       <div class="hero-text-container">
         <span>Personal Coach</span>
@@ -63,13 +82,12 @@
       </div>
       <div class="hero-img-container">
         <!-- TODO : oh hey there -->
-        <img src="./assets/gymcoach1.jpg" alt="" />
+        <img src="./assets/gymcoach7.jpg" alt="" />
       </div>
     </div>
     <div class="hero-service">
       <div class="hero-img-container">
-        <!-- TODO : oh hey there -->
-        <img src="./assets/gymcoach1.jpg" alt="" />
+        <img src="./assets/gymcoach8.jpg" alt="" />
       </div>
       <div class="hero-text-container">
         <span>Nutrition Coach</span>
@@ -101,7 +119,7 @@
     <div class="hero-service">
       <div class="hero-img-container">
         <!-- TODO : oh hey there -->
-        <img src="./assets/gymcoach1.jpg" alt="" />
+        <img src="./assets/gymcoach9.jpg" alt="" />
       </div>
       <div class="hero-text-container">
         <span>User
@@ -128,28 +146,25 @@
       </div>
       <div class="hero-img-container">
         <!-- TODO : oh hey there -->
-        <img src="./assets/gymcoach1.jpg" alt="" />
+        <img src="./assets/gymcoach10.jpg" alt="" />
       </div>
     </div>
   </section>
   <footer>
     <div class="social">
-      <a href="#">
+      <a href="https://www.facebook.com/GoldsGymIndia/" target="_blank">
         <img src="assets/icons/facebook-fill-w.svg" alt="" />
       </a>
-      <a href="#">
+      <a href="https://www.instagram.com/gymandfitness/?hl=en" target="_blank">
         <img src="assets/icons/instagram-alt-w.svg" alt="" />
       </a>
-      <a href="#">
+      <a href="https://www.linkedin.com/groups/3376929/" target="_blank">
         <img src="assets/icons/linkedin-with-circle-w.svg" alt="" />
-      </a>
-      <a href="#">
-        <img src="assets/icons/social-instagram.svg" alt="" />
       </a>
     </div>
     <div class="extra-link">
-      <a href="#">Feedback</a>
-      <a href="#">Report</a>
+      <a href="./contact.html">Feedback</a>
+      <a href="./contact.html">Report</a>
       <a href="./contact.html">Contact</a>
     </div>
   </footer>
