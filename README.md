@@ -1,4 +1,4 @@
-**Link:** https://rayforever.me/chad-gym/
+**Link:** [Live-Link](https://raiyanu.github.io/chad-gym/)
 
 # Task
 
